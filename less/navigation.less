@@ -8,12 +8,19 @@
   width: 100%;
   margin-top: 2%;
   border-bottom: 1px dashed grey;
+  @media @mobile {
+    flex-direction: column;
+  }
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   width: 45%;
+  @media @mobile {
+    width: 90%;
+    margin-bottom: 1%;
+  }
 
   a {
     text-decoration: none;
